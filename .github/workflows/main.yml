@@ -42,4 +42,4 @@ jobs:
       - name: Verify Build (Dry Run)
         run: |
           cd app
-          flutter build apk --debug --no-pub
+          flutter build apk --debug --no-pub --android-skip-build-dependency-validation

@@ -30,15 +30,15 @@ void callbackDispatcher() {
           // Note: In a full app, we would open Drift here and save.
           // For MVP, we verify the network call succeeds.
 
-          return Future.value(true);
+          return true;
         } catch (e) {
           if (kDebugMode) {
             print('Background Fetch Failed: $e');
           }
-          return Future.value(false);
+          return false;
         }
       default:
-        return Future.value(true);
+        return true;
     }
   });
 }

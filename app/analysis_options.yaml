@@ -19,6 +19,12 @@ linter:
     - prefer_single_quotes
 
 analyzer:
+  exclude:
+    - build/**
+    - android/**
+    - ios/**
+    - web/**
+    - windows/**
   language:
     strict-casts: true
     strict-inference: true
